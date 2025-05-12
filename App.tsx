@@ -3,6 +3,10 @@ import './global.css';
 import {NavigationContainer} from '@react-navigation/native';
 import StackNavigator from './src/navigation/StackNavigator';
 
+if(__DEV__) {
+  require('./ReactotronConfig')
+}
+
 const App = () => {
   return (
     <NavigationContainer>
